@@ -22,7 +22,7 @@ public class App {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             String version = "1.0";
-            String response = "Hello from Java in Docker!";
+            String response = "Hello from Java in Docker ";
             exchange.sendResponseHeaders(200, response.getBytes().length);
             try (OutputStream os = exchange.getResponseBody()) {
                 response = response + version;
